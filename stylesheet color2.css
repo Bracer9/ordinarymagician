@@ -1,0 +1,195 @@
+body {
+    font-family: "Avenir Next";
+    background-color: #bfd1c9;
+    background-image: url(Miku\ at\ home.jpg);
+    background-size: repeat;
+    min-height: 100vh;
+    position: relative;
+  }    
+  
+  li {
+    list-style: none;
+  }
+  
+  .header {
+    background-color: #c0babc;
+    color: #fff;
+    height: 92px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    margin-top: -15px;
+    margin-left: -10px;
+    opacity: 0.95;
+  }
+  
+  .header-logo {
+    float: left;
+    font-size: 43px;
+    padding: 20px 40px;
+    margin-top: 0px;
+    margin-right: 0px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+  }
+  
+  .header-logo:hover {
+    opacity: 1;
+  }
+
+  .header-logo {
+    transition: all 0.5s;
+  }
+
+  .header-list a {
+    float: left;
+    padding: 23px 40px 0px 40px;
+    font-size: 22px;
+    opacity: 0.8;
+  }
+
+  .btn-list:hover {
+    opacity: 1;
+  }
+  
+  .btn-list {
+    transition: all 0.3s;
+  }
+
+  .btn-list {
+    display: inline-block;
+    color: white;
+    bottom: none;
+    text-decoration: none;
+  }
+  
+  .main {
+    padding: 100px 80px;
+  }
+  
+  .copy-container h1 {
+    font-size: 140px;
+    position: relative;
+    padding-top: 100px;
+  }
+  
+  .copy-container h2 {
+    font-size: 60px;
+    margin-top: -100px;
+    background-color:rgb(255, 251, 251);
+    opacity: 0.6;
+    border-radius: 30px;
+    text-align: right;
+    padding-right: 25px;
+  }
+  
+  .span-1 {
+    color: rgb(147, 142, 142);
+  }
+  
+  .contents {
+    height: 500px;
+    margin-top: 100px;
+  }
+  
+  .section-title {
+    border-bottom: 2px solid #392c32;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+  }
+  
+  .contents-item {
+    float: left;
+    margin-right: 40px;
+  }
+  
+  .contents-item p {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  
+  .contact-form {
+    padding-top: 30px;
+   
+  }
+  
+  input, textarea {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #392c32;
+  }
+  /* inputとtextareaのCSSを指定してください */
+  
+  .contact-submit {
+    background-color: #bfd1c9;
+    color: #392c32;
+  }
+  /* contact-submitのCSSを指定してください */
+  
+  
+  .footer {
+    background-color: #392c32;
+    color: #fff;
+    height: 100px;
+    padding: 30px 40px 70px 40px;
+    margin-left: -100px;
+    width: 100%;
+    position: absolute;/*←絶対位置*/
+    bottom: -20vh; /*下に固定*/
+
+  }
+  
+  .btn-footer {
+    display: inline-block;
+    color: white;
+    text-align: right;
+  }
+
+  .footer-logo {
+    float: left;
+    color: #fff;
+    font-size: 40px;
+    margin-top: 20px;
+    opacity: 0.7;
+  }
+  
+.footer-logo:hover {
+  opacity: 1;
+}
+
+.footer-logo {
+  transition: all 0.5s;
+}
+
+  .footer-list {
+    float: right;
+  }
+  
+  .footer-list a {
+    margin-top: 40px;
+    margin-right: 50px;
+    font-size: 24px;
+    opacity: 0.7;
+  }
+  
+  .ERO {
+    position: absolute;
+    top: -190px;
+  }
+  .HELLO {
+    color: rgb(37, 36, 35);
+  }
+  .span-2 {
+    color: rgb(202, 197, 197);
+  }
+
+  .footer-list li:hover {
+    opacity: 1;
+  }
+
+  
