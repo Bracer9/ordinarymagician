@@ -32,14 +32,11 @@ body {
     text-decoration: none;
     color: #fff;
     opacity: 0.8;
+    transition: all 0.5s;
   }
   
   .header-logo:hover {
     opacity: 1;
-  }
-
-  .header-logo {
-    transition: all 0.5s;
   }
 
   .header-list a {
@@ -52,16 +49,13 @@ body {
   .btn-list:hover {
     opacity: 1;
   }
-  
-  .btn-list {
-    transition: all 0.3s;
-  }
 
   .btn-list {
     display: inline-block;
     color: white;
     bottom: none;
     text-decoration: none;
+    transition: all 0.3s;
   }
   
   .main {
@@ -78,12 +72,25 @@ body {
     font-size: 60px;
     margin-top: -100px;
     background-color:rgb(255, 251, 251);
-    opacity: 0.6;
+    opacity: 0.5;
     border-radius: 30px;
     text-align: right;
     padding-right: 25px;
+    cursor: text;
   }
   
+  .search {
+    position: absolute;
+    bottom: 150px;
+    height: 85px;
+    width: 1800px;
+    background-color: rgb(255, 251, 251);
+    background-color: rgba(255, 251, 251, 0);
+    font-size: 60px;
+    border-radius: 30px;
+  }
+
+
   .span-1 {
     color: rgb(147, 142, 142);
   }
@@ -114,22 +121,6 @@ body {
     padding-top: 30px;
    
   }
-  
-  input, textarea {
-    width: 400px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding: 20px;
-    font-size: 18px;
-    border: 1px solid #392c32;
-  }
-  /* inputとtextareaのCSSを指定してください */
-  
-  .contact-submit {
-    background-color: #bfd1c9;
-    color: #392c32;
-  }
-  /* contact-submitのCSSを指定してください */
   
   
   .footer {
