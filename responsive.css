@@ -1,0 +1,9 @@
+/* for tablets */
+
+@media all and (max-width:1100px) {
+    .copy-container h1 {
+        font-size: 70px;
+    }
+    
+    
+}
