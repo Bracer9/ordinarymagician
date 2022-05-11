@@ -306,6 +306,7 @@ body {
     animation-fill-mode: forwards;
     animation-delay: 2.5s;
     background-color: rgba(255, 251, 251, 0);
+    -webkit-appearance: none;
   }
 
   @keyframes EROanime {
@@ -333,6 +334,7 @@ body {
     animation-fill-mode: forwards;
     animation-delay: 2s;
     background-color: rgba(255, 251, 251, 0);
+    -webkit-appearance: none;
   }
 
   @keyframes HELLOanime {
