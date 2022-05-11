@@ -253,12 +253,12 @@ body {
     background-color: #4d3e45;
     color: #fff;
     padding: 30px 0 50px 0;
-    
     width: 100%;
     position: absolute;/*←絶対位置*/
     bottom: 0%; /*下に固定*/
     left: 0px;
     cursor: url(leek-32.png), default;
+    overflow:hidden; 
   }
   
   
