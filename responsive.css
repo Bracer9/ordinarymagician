@@ -26,11 +26,10 @@
         height: 65px;
         margin-top: 70px;
         padding-bottom: 25px;
+        font-size: 60px;
     }
 
-    .footer-list {
-        display: none;
-    }
+    
 }
 
 /* for smartphone */
@@ -49,6 +48,9 @@
     }
 
     .place {
+        display: none;
+    }
+    .footer-list {
         display: none;
     }
 }
