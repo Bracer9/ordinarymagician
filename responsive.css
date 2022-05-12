@@ -27,11 +27,17 @@
         margin-top: 70px;
         padding-bottom: 25px;
         font-size: 60px;
-    }
+        text-indent:100%;
+        white-space:nowrap;
+        overflow:hidden;
+        }
+    
 
     .footer-list {
         display: none;
     }
+
+
 }
 
 /* for smartphone */
