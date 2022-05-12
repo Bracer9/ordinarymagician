@@ -13,7 +13,7 @@ html {
 body {
     font-family: "Avenir Next";
     background-color: #bfd1c9;
-    background-image: url(sakura.jpg);
+    background-image: url(theater.png);
     background-size: cover;
     background-size: 100%;
     min-height: 100%;
@@ -123,7 +123,7 @@ body {
     animation-name: fadeintitle;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-delay: 0.8s;
+    animation-delay: 0.5s;
     opacity: 0;
 }
 
@@ -150,7 +150,7 @@ body {
     animation-name: fadeinmain;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 0.8s;
     opacity: 0;
     overflow-y: scroll;
 }
