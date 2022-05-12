@@ -6,13 +6,13 @@
     }
     
     .HELLO {
-        width: 300px;
+        width: 320px;
         height: 100px;
         line-height: 100px;
     }
 
     .ERO {
-        width: 280px;
+        width: 250px;
         height: 100px;
         padding: 0px;
         line-height: 100px;
@@ -25,6 +25,6 @@
     .copy-container h2 {
         height: 90px;
         margin-top: 70px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 }
