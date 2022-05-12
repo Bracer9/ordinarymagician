@@ -61,5 +61,7 @@
 
     body {
         background-image: url(racing\ miku.jpg);
+        background-size: no-repeat;
+        background-size: cover;
     }
 }
