@@ -29,7 +29,9 @@
         font-size: 60px;
     }
 
-    
+    .footer-list {
+        display: none;
+    }
 }
 
 /* for smartphone */
@@ -43,12 +45,17 @@
         width: 100%;
     }
 
+
+    html {
+        width: 100%;
+
+    }
+
     body {
         width: 100%;
     }
 
-    
-    .footer-list {
+    .place {
         display: none;
     }
 }
