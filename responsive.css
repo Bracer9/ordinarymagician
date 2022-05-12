@@ -66,8 +66,12 @@
     }
 
     body {
-        background-image: url(miku-siting.jpg);
+        background-image: url(gateboxmiku.jpg);
         background-size: no-repeat;
         background-size: cover;
+    }
+
+    .contents-wrapper {
+        width: 100%;
     }
 }

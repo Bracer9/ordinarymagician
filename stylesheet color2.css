@@ -13,7 +13,7 @@ html {
 body {
   font-family: "Avenir Next";
   background-color: #bfd1c9;
-  background-image: url(foreign.png);
+  background-image: url(Miku\ at\ home.jpg);
   background-size: cover;
   background-size: 100%;
   zoom: 75%;   
@@ -130,7 +130,7 @@ body {
     opacity: 0;
   }
   100% {
-    margin-top: -15px;
+    margin-top: 0px;
     opacity: 0.9;
     
   }
@@ -139,13 +139,13 @@ body {
   .header-logo {
     float: left;
     font-size: 43px;
-    padding: 15px 40px 10px 40px;
-    margin-top: 15px;
-    margin-right: 0px;
+    padding-left: 30px;
+    margin-right: 32px;
+    line-height: 102px;
     text-decoration: none;
     color: #fff;
     transition: all 0.6s;  
-  }
+}
   
   .header-logo:hover {
     color: rgba(111, 255, 255, 0.896);
@@ -153,12 +153,18 @@ body {
 
   .header-list a {
     float: left;
-    padding: 32px 40px 23px 40px;
-    font-size: 22px;
-    margin-top: -3px;
+    height: 102px;
+    line-height: 102px;
+    padding: 0px 40px 0px 40px;
+    font-size: 25px;
     background-color: aqua;
     background-color: rgba(0, 255, 255, 0);
   }
+
+  .header-list ul {
+    height: 0px;
+    margin: 0px;
+  } 
 
   .btn-list:hover {
     background-color: rgba(0, 255, 255, 0.3);
