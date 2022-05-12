@@ -27,4 +27,8 @@
         margin-top: 70px;
         padding-bottom: 20px;
     }
+    
+    .footer-list {
+        display: none;
+    }
 }
