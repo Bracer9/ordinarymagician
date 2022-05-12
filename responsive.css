@@ -12,7 +12,7 @@
     }
 
     .ERO {
-        width: 230px;
+        width: 250px;
         height: 100px;
         padding: 0px;
         line-height: 100px;
@@ -25,10 +25,30 @@
     .copy-container h2 {
         height: 65px;
         margin-top: 70px;
-        padding-bottom: 35px;
+        padding-bottom: 25px;
     }
-    
+
     .footer-list {
+        display: none;
+    }
+}
+
+/* for smartphone */
+
+@media all and (max-width:670px) {
+    .copy-container h2 {
+        display: none;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .place {
         display: none;
     }
 }
