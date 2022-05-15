@@ -15,6 +15,8 @@ body {
   background-color: #bfd1c9;
   background-image: url(foreign.png);
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: 100%;
   zoom: 75%;   
   padding: 0;

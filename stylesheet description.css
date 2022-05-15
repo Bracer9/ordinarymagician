@@ -16,6 +16,8 @@ body {
     background-image: url(foreign.png);
     background-size: cover;
     background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     min-height: 100%;
     zoom: 75%; 
     cursor: url(leek-32.png), default;
