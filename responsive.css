@@ -5,6 +5,10 @@
         font-size: 70px;
     }
     
+    html {
+        -webkit-appearance: none;
+      }
+    
     .HELLO {
         width: 320px;
         height: 100px;
@@ -46,6 +50,11 @@
     .copy-container h2 {
         display: none;
     }
+    
+    
+    html {
+        -webkit-appearance: none;
+      }
 
     .footer {
         width: 100%;
