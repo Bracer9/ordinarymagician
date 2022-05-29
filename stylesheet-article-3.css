@@ -1,0 +1,765 @@
+
+
+html {
+    min-height: 100%;
+    position: relative;
+    min-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    -webkit-appearance: none;
+  }
+  
+  
+  body {
+    font-family: "Avenir Next";
+    background-color: #bfd1c9;
+    background-image: url(sunset.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    cursor: url(leek-32.png), default;
+    display: flex;
+    flex-flow: column;
+     
+    }   
+  
+    #loader-wrap {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      background: rgb(13, 197, 193);
+      z-index: 999;
+      box-sizing: border-box;
+    }
+  
+  .loader,
+  .loader:before,
+  .loader:after {
+    background: #ffffff;
+    -webkit-animation: load1 1s infinite ease-in-out;
+    animation: load1 1s infinite ease-in-out;
+    width: 1em;
+    height: 4em;
+  }
+  .loader {
+    color: #ffffff;
+    text-indent: -9999em;
+    margin: 88px auto;
+    position: relative;
+    font-size: 11px;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  .loader:before,
+  .loader:after {
+    position: absolute;
+    top: 0;
+    content: '';
+  }
+  .loader:before {
+    left: -1.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  .loader:after {
+    left: 1.5em;
+  }
+  @-webkit-keyframes load1 {
+    0%,
+    80%,
+    100% {
+      box-shadow: 0 0;
+      height: 4em;
+    }
+    40% {
+      box-shadow: 0 -2em;
+      height: 5em;
+    }
+  }
+  @keyframes load1 {
+    0%,
+    80%,
+    100% {
+      box-shadow: 0 0;
+      height: 4em;
+    }
+    40% {
+      box-shadow: 0 -2em;
+      height: 5em;
+    }
+  }
+  
+  .loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+    li {
+      list-style: none;
+    }
+    
+    .header {  
+      background-color: #65575d;
+      color: #fff;
+      height: 75px;
+      position: fixed;
+      width: 100%;
+      box-sizing: border-box;
+      z-index: 10;
+      opacity: 0.9;
+      cursor: url(leek-32.png), default; 
+    }
+    
+  
+  
+    .header-logo {
+      float: left;
+      font-size: 32px;
+      padding-left: 20px;
+      margin-right: 25px;
+      line-height: 75px;
+      opacity: none;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.6s;  
+  }
+    
+    .header-logo:hover {
+      color: rgba(111, 255, 255, 0.896);
+    }
+  
+    .header-list a {
+      float: left;
+      height: 75px;
+      line-height: 75px;
+      padding: 0px 30px 0px 30px;
+      font-size: 20px;
+      color: white;
+      bottom: none;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+  
+    .header-list ul {
+      height: 0px;
+      margin: 0px;
+    } 
+    
+    .header-list ul ul {
+      display: block;
+      float: none;
+      position: absolute;
+      top: 75px;
+      left: 108px;
+      background-color: #65575d;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+    
+    .children {
+      background-color: #65575d;
+      opacity: 1;
+      width: 367px;
+      height: 70px;
+      text-decoration: none;
+      color: #fff;
+    }
+  
+    #mother:hover > ul {
+      visibility: visible;
+      opacity: 1;
+    }
+  
+    .header-list ul ul li a:hover {
+      background-color: rgb(10, 200, 200);
+    }
+  
+  
+    .has-child {
+      position: relative;
+      
+    }
+  
+    .header-list a:hover {
+      background-color: rgba(0, 255, 255, 0.3);
+    }
+  
+    .twitter {
+      position: absolute;
+      right: 0px;
+    }
+  
+    .soundcloud {
+      position:absolute;
+      right: 80px;
+    }
+  
+    /* arrow */
+    .dli-chevron-down {
+      display: inline-block;
+      color: rgb(255, 255, 255);
+      line-height: 1;
+      width: 0.6em;
+      height: 0.6em;
+      border: 0.1em solid currentColor;
+      border-left: 0;
+      border-bottom: 0;
+      box-sizing: border-box;
+      transform: translateY(-25%) rotate(135deg);
+      margin-right: 10px;
+      margin-bottom: 2px;
+    }
+  
+    
+  
+    .footer {
+        background-color: #4d3e45;
+        color: #fff;
+        height: 120px;
+        width: 100%;
+        position: absolute;/*←絶対位置*/
+        bottom: 0%; /*下に固定*/
+        left: 0px;
+        cursor: url(leek-32.png), default;
+      }
+      
+      
+      .btn-footer {
+        display: inline-block;
+        color: white;
+        text-align: right;
+        padding-bottom: 10px;
+      }
+      
+      .footer-logo {
+        float: left;
+        color: #fff;
+        font-size: 30px;
+        padding-top: 39px;
+        padding-left: 30px;
+        opacity: 0.7;
+      }
+      
+      .footer-logo:hover {
+      opacity: 1;
+      }
+      
+      .footer-logo {
+      transition: all 0.5s;
+      }
+      
+      .footer-list {
+        float: right;
+      }
+      
+      .footer-list a {
+        margin-top: 50px;
+        margin-right: 50px;
+        font-size: 18px;
+        opacity: 0.7;
+      }
+      
+      .footer-list ul {
+        margin: 0px;
+        padding: 0px;
+      }
+  
+  
+    .ERO {
+      margin-top: 35px;
+      width: 230px;
+      height: 130px;
+      line-height: 140px;
+      color: rgba(37, 36, 35, 0);
+      animation-name: EROanime;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-delay: 2.5s;
+      background-color: rgba(255, 251, 251, 0);
+      -webkit-appearance: none;
+      border-radius: 30px;
+    }
+  
+    @keyframes EROanime {
+      0% {
+        color: rgba(37, 36, 35, 0);
+        background-color: rgba(255, 251, 251, 0);
+      }
+  
+      100% {
+        color: rgba(37, 36, 35, 1);
+        background-color: rgba(255, 251, 251, 0.43);
+      }
+    }
+  
+    .HELLO {
+      color:rgba(37, 36, 35, 0);
+      padding: 0px;
+      line-height: 145px;
+      margin-top: 125px;
+      height: 135px;
+      width: 350px;
+      animation-name: HELLOanime;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-delay: 2s;
+      background-color: rgba(255, 251, 251, 0);
+      -webkit-appearance: none;
+      border-radius: 30px;
+    }
+  
+    @keyframes HELLOanime {
+      0% {
+        color: rgba(37, 36, 35, 0);
+        background-color: rgba(255, 251, 251, 0);
+      }
+  
+      100% {
+        color: rgba(37, 36, 35, 1);
+        background-color: rgba(255, 251, 251, 0.43);
+      }
+    }
+  
+    .span-2 {
+      color: rgba(9, 139, 133, 0.7);
+      opacity: 0;
+      animation-name: EOanime;
+      animation-fill-mode: forwards;
+      animation-delay: 1.1s;
+      animation-duration: 2s;
+      display: inline-block;
+    }
+  
+    @keyframes EOanime {
+      0% {
+        opacity: 0;
+        transform: translateY(-100px);
+      }
+  
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  
+    .span-R {
+      color:rgba(211, 81, 81, 0.904);
+      opacity: 0;
+      animation-name: Ranime;
+      animation-fill-mode: forwards;
+      animation-delay: 1.1s;
+      animation-duration: 3s;
+      display: inline-block;
+      margin-left: 8px;
+    }
+  
+    @keyframes Ranime {
+      0% {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+  
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  
+  
+    
+  
+    h1 {
+      width: 100%;
+      margin-bottom: 0px;
+      
+    }
+  
+  
+    .footer-list li:hover {
+      opacity: 1;
+    }
+  
+    i {
+      padding-right: 8px;
+    }
+  
+    
+  #loader-wrap {
+      -moz-animation: cssAnimation 0.5s ease-in 0.5s forwards;
+      /* Firefox */
+      -webkit-animation: cssAnimation 0.5s ease-in 0.5s forwards;
+      /* Safari and Chrome */
+      -o-animation: cssAnimation 0.5s ease-in 0.5s forwards;
+      /* Opera */
+      animation: cssAnimation 0.5s ease-in 0.5s forwards;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+  }
+  @keyframes cssAnimation {
+      to {
+          opacity: 0;
+          overflow:hidden;
+          z-index: 0;
+      }
+  }
+  @-webkit-keyframes cssAnimation {
+      to {
+          opacity: 0;
+          visibility:hidden;
+      }
+  }
+  
+  
+  .toppicture {
+    width: 100%;
+    max-width: 939px;
+    height: auto;
+    border-radius: 30px;
+  }
+  
+  .flipX {
+    text-align: center;
+  }
+  
+  .contents-wrapper h2 {
+    text-align: center;
+    font-family: "Avenir Next";
+    font-weight: 400;
+  }
+  
+  /*== ボタン共通設定 */
+  .btn{
+    /*アニメーションの起点とするためrelativeを指定*/
+    position: relative;
+    overflow: hidden;
+    /*ボタンの形状*/
+    text-decoration: none;
+    display: inline-block;
+    border: 3px solid #65575d;/* ボーダーの色と太さ */
+    padding: 15px 39px;
+    text-align: center;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    /*アニメーションの指定*/   
+    transition: ease .2s;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    font-weight: bold;
+  }
+  
+  /*ボタン内spanの形状*/
+  .btn span {
+    position: relative;
+    z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+    color: #4d4649;
+  }
+  
+  .btn:hover span{
+    color:#fff;
+  }
+  
+  /*== 背景が流れる（左から右） */
+  .bgleft:before {
+    content: '';
+    /*絶対配置で位置を指定*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /*色や形状*/
+    background: #65575d;/*背景色*/
+    width: 100%;
+    height: 100%;
+    /*アニメーション*/
+    transition: transform .39s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    transform: scale(0, 1);
+    transform-origin: right top;
+  }
+  
+  /*hoverした際の形状*/
+  .bgleft:hover:before{
+    transform-origin:left top;
+    transform:scale(1, 1);
+  }
+  
+  /* 回転X軸
+     ----------------------------- */
+  
+     .flipX a{/*テキストの基点となる位置を定義*/
+      position: relative;
+      display: block;
+      margin: 0 15%;
+    }
+    
+    .flipX img {
+      transition: all 0.35s ease;/*移り変わる速さを変更したい場合はこの数値を変更*/
+      backface-visibility: hidden;/*三次元になった際に裏面を可視化させない*/
+    }
+    
+    .flipX a:hover img {/*hoverした時の変化*/
+      transform: rotateX(-180deg);/*縦軸に回転*/
+      opacity: 0;
+    }
+    
+    .flipX span.cap {
+    /*ここからエリアの絶対配置の指定*/
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    /*ここまでエリアの絶対配置の指定*/
+      transition: all 0.35s ease;/*移り変わる速さを変更したい場合はこの数値を変更*/
+      transform: rotateX(90deg);/*縦軸に回転*/
+      transform-origin: 0% 50%;/*回転する基点*/
+      opacity: 0;
+      background: #65575d;/*背景色*/
+      color: #fff;/*テキストの色を変えたい場合はここを修正*/
+      /*ここからテキスト中央寄せの指定*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*ここまでテキスト中央寄せの指定*/
+    }
+    
+    .flipX a:hover span.cap {/*hoverした時の変化*/
+      transform: rotateX(0);
+      opacity: 1;
+      transition-delay: 0.15s;/*移り変わる速さを変更したい場合はこの数値を変更*/
+    }
+  
+    .sub-contents {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .sub-contents .article {
+      flex: auto;
+      width: 50%;
+      border-top: solid 2px #aba7a9;
+      border-bottom: solid 2px #aba7a9;
+    }
+  
+    .contents {
+      margin-bottom: 60px;
+    }
+  
+    .article {
+      position: relative; /*--positionを追加--*/
+    }
+    
+    .article::after {
+      position: absolute; /*--positionを追加--*/
+      top: 0;
+      left: 100%;
+      margin: 0 0em;
+      content: "";
+      width: 1px; /*--縦線の太さ(幅)--*/
+      height: 100%;
+      background-color: #aba7a9; /*--縦線の色--*/
+    }
+  
+    .article::before {
+      position: absolute; /*--positionを追加--*/
+      top: 0;
+      right: 100%;
+      margin: 0 0em;
+      content: "";
+      width: 0.1px; /*--縦線の太さ(幅)--*/
+      height: 100%;
+      background-color: #aba7a9; /*--縦線の色--*/
+    }
+  
+    .article > .btn {
+      margin-top: 15px;
+      margin-bottom: 50px;
+    }
+  
+    .main3 {
+      font-size: 17px;
+      font-weight: 400;
+      font-style: italic;
+      font-family: "Yu Gothic";
+      padding: 0px 39px 0px 39px;
+      text-align: center;
+      margin-top: 30px;
+  }
+  
+  
+  .ornament h2{
+      position:relative;
+      display:inline-block;
+      padding:24px 64px;
+  }
+  .ornament h2:before, .ornament h2:after{
+      content:"";
+      display:block;
+      width:50%;
+      height:4px;
+      border-top:1px solid #111;
+      position:absolute;
+      top:0;
+  }
+  .ornament h2:before{left:-24px;}
+  .ornament h2:after{right:-24px;}
+  .ornament h2 span{
+      display:block;
+      width:4px;height:4px;
+      border:2px solid #111;
+      -webkit-transform:rotate(45deg);
+      transform:rotate(45deg);
+      position:absolute;
+      top:-4px;
+      left:50%;
+      margin-left:-4px;
+  }
+  .dli-chevron-up {
+    display: inline-block;
+    vertical-align: middle;
+    color: #65575d;
+    line-height: 1;
+    width: 2em;
+    height: 2em;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(25%) rotate(-45deg);
+    opacity: 0;
+    animation-name:zoomInAnime2;
+    animation-duration:1s;
+    animation-delay: 1.7s;
+    animation-fill-mode:forwards;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  
+  @keyframes zoomInAnime2{
+    from {
+    opacity: 0;
+    transform: scale(0.1);
+    transform: translateY(25%) rotate(-45deg);
+    }
+  
+    to {
+    opacity: 1;    
+    transform: scale(1);
+    transform: translateY(25%) rotate(-45deg);
+    }
+  }
+  .dli-chevron-up:hover {
+    border-color: rgba(26, 207, 198, 1);
+    transition: .2s;
+  }
+  
+  
+
+
+
+.contents-wrapper {
+    height: 1000px;
+    background-color: rgba(240, 239, 239, 0);
+    width: 64.5%;
+    flex: 1;
+    min-height: 100%;
+    margin: 0 auto;
+    padding-top: 75px;
+    animation-name: backinanime;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+    cursor: auto;
+}
+
+@keyframes backinanime {
+  0% {
+    background-color: rgba(240, 239, 239, 0);
+    transform: translateY(600px);
+  }
+
+  100% {
+    background-color: rgba(240, 239, 239, 0.93);
+    transform: translateY(0px);
+  }
+}
+
+.title {
+    font-size: 39px;
+    color: rgb(37, 36, 35);
+    border-top:9px dotted;
+    border-bottom: 9px dotted;
+    border-color: #aba7a9;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    animation-name: fadeintitle;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+@keyframes fadeintitle {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+
+.main {
+    font-size: 19px;
+    font-weight: 500;
+    height: 530px;
+    font-family: "Yu Gothic";
+    padding: 20px 39px 50px 39px;
+    margin-top: 30px;
+    margin-bottom: 126px;
+    animation-name: fadeinmain;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+@keyframes fadeinmain {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.main::-webkit-scrollbar {
+  width: 15px;
+}
+
+.main::-webkit-scrollbar-track {
+  background: rgba(111, 255, 255, 0);
+  border-radius: 30px;
+  box-shadow:0 0 5px rgba(240, 239, 239, 0.93) inset ;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: rgba(111, 255, 255, 0.5);
+  border-radius: 30px;
+}
