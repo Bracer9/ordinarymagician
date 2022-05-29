@@ -135,5 +135,16 @@
     .twitter {
         right: 20px;
     }
-
+    body::before {
+        background: url('island.jpg') no-repeat center;/* 擬似要素に背景画像 */
+        background-size: cover;/* cover指定 */
+        content: "";/* 画像を表示させる為に必要*/
+        display: block;/*ブロックボックスで表示*/
+        position: fixed;/* 擬似要素全体を固定 */
+        width: 100%;/* 横幅を画面全体 */
+        height: 100vh;/* 縦幅を画面全体 */
+        top: 0;/* 上からの配置を0 */
+        left: 0;/* 左からの配置を0 */
+        z-index: -1;/*背景画像になるように重ね順を-1*/
+      }
   }
