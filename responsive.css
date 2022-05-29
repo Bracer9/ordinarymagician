@@ -78,7 +78,6 @@
         background-image: url(island.jpg);
         background-size: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
     }
 
     .contents-wrapper {
