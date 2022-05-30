@@ -398,8 +398,11 @@ body {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 10px;
+    animation: appear .6s 2.5s forwards;
+    opacity: 0;
 }
   /* lines design for date */
+
   h3 {
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -424,7 +427,6 @@ body {
     background: #aba7a9;
   }
 
-
   .title {
     font-size: 39px;
     color: rgb(37, 36, 35);
@@ -432,6 +434,7 @@ body {
     padding-bottom: 15px;
     text-align: center;
     margin-bottom: 30px;
+    font-weight: 400;
 }
 
   .contents > .title {
@@ -820,14 +823,14 @@ body {
 .ornament h2:before, .ornament h2:after{
 	content:"";
 	display:block;
-	width:50%;
+	width:60%;
 	height:4px;
 	border-top:1px solid #111;
 	position:absolute;
 	top:0;
 }
-.ornament h2:before{left:-24px;}
-.ornament h2:after{right:-24px;}
+.ornament h2:before{left: -120px;}
+.ornament h2:after{right:-120px;}
 .ornament h2 span{
 	display:block;
 	width:4px;height:4px;
@@ -878,3 +881,68 @@ body {
   transition: .2s;
 }
 
+.sub-contents h2 {
+  font-size: 1.4em;
+}
+
+/*========= バー表示のためのCSS ===============*/
+
+.scrollgress{
+	z-index: 3;/*他のposition指定しているエリアより前に出すためz-indexの数字を大きく*/
+	top:70px!important;/* fixedで設置しているheaderの高さよりも下にバーを出す*/
+}
+#header{
+
+z-index: 2;
+top:0;
+width:100%;
+}
+
+html::-webkit-scrollbar {
+  width: 15px;
+}
+
+html::-webkit-scrollbar-track {
+  background: white;
+  box-shadow:0 0 5px rgba(240, 239, 239, 0.93) inset ;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #65575d;
+}
+
+.ornament {
+  animation: appear .6s 2.5s forwards;
+  opacity: 0;
+}
+
+@keyframes appear {
+  0% {
+    margin-left: -300px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 0.9;
+    
+  }
+}
+
+
+/*　Y軸（横へ） */
+.rotateY{
+  animation-name:rotateYAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes rotateYAnime{
+  from{
+    transform: rotateY(0);
+    opacity: 0;
+    }
+  to{
+    transform: rotateY(-360deg);
+    opacity: 1;
+    }
+}

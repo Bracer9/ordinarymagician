@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Proero</title>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
     <link rel="reset" href="reset.css">
     <link rel="stylesheet" href="stylesheet color2.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="responsive.css">
-    
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   </head>
   <body>
     <script type="text/javascript" src="programing/loading.js"></script>
     
-    <div class="header">
+    <div id="header" class="header">
       <a href=# class="header-logo">Proero</a>
       <div class="header-list">
         <ul>
@@ -43,7 +43,7 @@
     </div>
 
     
-    <div class="main">
+    <div id="container" class="main">
       <div class="copy-container">
         <div id="title">
           <h1 class="HELLO">H<span class="span-2">E</span>LL<span class="span-2">O</span></h1>
@@ -58,8 +58,8 @@
       <div class="contents-wrapper">
         
           <div class="contents">
-            <h3><span class="date">April 22, 2022</span></h3>
-            <h1 class="title">
+            <h3><p class="date box rotateYTrigger">April 22, 2022</p></h3>
+            <h1 class="title box rotateYTrigger">
               管理人のイチオシ！
             </h1>
             <div class="ornament"><h2 class="picturetitle"><span></span>
@@ -79,7 +79,7 @@
         
         <div class="sub-contents">
           <div class="article">
-            <h3><span class="date">April 19, 2022</span></h3>
+            <h3><span class="date box rotateYTrigger">April 19, 2022</span></h3>
             <h2 class="picturetitle">
               【戦国ランス】
             </h2>
@@ -115,7 +115,7 @@
     </section>
     
     <div class="overflow">
-    <div class="footer">
+    <div id="footer" class="footer">
       <a href=#><div class="footer-logo">Proero</div></a>
       <div class="footer-list">
         <ul>
@@ -128,5 +128,9 @@
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="link.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="trigger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollgress/2.0.0/scrollgress.min.js"></script>
+    <script src="scroll.js"></script>
   </body>
 </html>

@@ -78,6 +78,7 @@
         background-image: url(island.jpg);
         background-size: no-repeat;
         background-size: cover;
+        
     }
 
     .contents-wrapper {
@@ -116,14 +117,23 @@
         display: none;
       }
     
-      .article::before {
+    .article::before {
         display: none;
       }
 
-    .ornament {
+    .ornament h2:after {
+        right: 0px;
+        width: 43%;
         display: none;
     }
+
+    .ornament h2:before {
+        left: -24px;
+        display: none;
+    }
+
     
+
     #mother {
         display: none;
     }
