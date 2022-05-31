@@ -4,7 +4,7 @@ function fadeAnime(){
 // くるっ
 
   $('.rotateYTrigger').each(function(){ //rotateYTriggerというクラス名が
-    var elemPos = $(this).offset().top-50;//要素より、50px上の
+    var elemPos = $(this).offset().top-1;//要素より、50px上の
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight){

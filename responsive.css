@@ -7,16 +7,15 @@
     
     
     .HELLO {
-        width: 195px;
-        height: 80px;
-        line-height: 100px;
+        width: 200px;
+        height: 60px;
+        line-height: 70px;
     }
 
     .ERO {
-        width: 130px;
-        height: 80px;
-        padding: 0px;
-        line-height: 100px;
+        width: 140px;
+        height: 60px;
+        line-height: 70px;
     }
 
     .search {
@@ -74,7 +73,7 @@
         display: none;
     }
 
-    body {
+    #body-img {
         background-image: url(island.jpg);
         background-size: no-repeat;
         background-size: cover;
@@ -97,6 +96,7 @@
     .contents-wrapper {
         border-radius: 0;    
         height: 100%;
+        margin-top: 100px;
     }
 
     .title {
@@ -132,8 +132,6 @@
         display: none;
     }
 
-    
-
     #mother {
         display: none;
     }
@@ -157,7 +155,17 @@
         left: 0;/* 左からの配置を0 */
         z-index: -1;/*背景画像になるように重ね順を-1*/
       }
-    .rotateY {
+      .rotateY {
         animation: none;
     }
+
+    .ornament {
+        opacity: 1;
+    }
+
+    #title {
+        margin: 0px 20px 100px -30px;
+    }
   }
+
+    

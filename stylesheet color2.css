@@ -12,19 +12,14 @@ html {
 
 body {
   font-family: "Avenir Next";
-  background-color: #bfd1c9;
-  background-image: url(sunset.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  
   padding: 0;
   margin: 0;
   min-height: 100vh;
   cursor: url(leek-32.png), default;
   display: flex;
   flex-flow: column;
-   
+  position: relative;
   }   
 
   #loader-wrap {
@@ -197,7 +192,7 @@ body {
   }
 
   .header-list ul ul li a:hover {
-    background-color: rgb(10, 200, 200);
+    background-color: rgba(10, 200, 200, 0.7);
   }
 
 
@@ -237,7 +232,7 @@ body {
   }
 
   .main {
-    padding: 100px 80px;
+    padding: 100px 0px;
     flex: 1; 
     position: relative;
   }
@@ -268,6 +263,9 @@ body {
     animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-delay: 0.9s;
+    margin-left: 100px;
+    margin-right: 100px;
+    visibility: hidden;
   }
   
   
@@ -289,7 +287,7 @@ body {
     position: absolute;
     top: 580px;
     height: 66px;
-    width: 89.2%;
+    width: 86.5%;
     background-color: rgba(111, 43, 43, 0);
     font-size: 60px;
     border-radius: 30px;
@@ -297,6 +295,9 @@ body {
     float: right;
     outline:rgb(37, 36, 35);
     outline: rgba(37, 36, 35, 0);
+    margin-left: 100px;
+    margin-right: 100px;
+    visibility: hidden;
   }
 
   .search:focus {
@@ -310,7 +311,8 @@ body {
     width:3em;
     height:3em;
     cursor:pointer;
-    border:3px solid #bcbbbb;
+    /*border:3px solid #bcbbbb;*/
+    border:3px solid #76686e;
     vertical-align:middle;
     margin-bottom:4px;
     transition: border-color 0.5s;
@@ -321,8 +323,8 @@ body {
     position:absolute;
     width:1.2em;
     height:1.2em;
-    border-left:3px solid #bcbbbb;
-    border-bottom:3px solid #bcbbbb;
+    border-left:3px solid #76686e;
+    border-bottom:3px solid #76686e;
     transition: border-color 0.5s;
     transition: transform .6s ease;
   }
@@ -336,11 +338,11 @@ body {
    display: flex;
    justify-content: center;
    opacity: 0;
-   animation-name:zoomInAnime;
-   animation-duration:1s;
-   animation-delay: 1.7s;
-   animation-fill-mode:forwards;
+   animation: 
+      zoomInAnime 1s 1.7s forwards,
+      down 2.7s infinite 2.8s running;
   }
+  
   
   @keyframes zoomInAnime{
     from {
@@ -377,17 +379,22 @@ body {
   }
   
   .contents-wrapper {
-    background-color: rgba(240, 239, 239, 0.92);
-    width: 90%;
+    background-color: rgba(240, 239, 239, 1);
+    width: 80.5%;
     flex: 1;
-    height: 2035px;
+    height: 2060px;
     min-height: 100%;
     margin: 0 auto;
     margin-top: 60px;
     padding-top: 25px;
-    border-radius: 8%;
+    border-radius: 0%;
     text-align: center;
 }
+  #wrap {
+    opacity: 1;
+  }
+
+  
   .main2 {
     font-size: 17px;
     font-weight: 400;
@@ -398,8 +405,6 @@ body {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 10px;
-    animation: appear .6s 2.5s forwards;
-    opacity: 0;
 }
   /* lines design for date */
 
@@ -517,7 +522,7 @@ body {
 
     100% {
       color: rgba(37, 36, 35, 1);
-      background-color: rgba(255, 251, 251, 0.43);
+      background-color: rgba(255, 251, 251, 0.23);
     }
   }
 
@@ -545,12 +550,12 @@ body {
 
     100% {
       color: rgba(37, 36, 35, 1);
-      background-color: rgba(255, 251, 251, 0.43);
+      background-color: rgba(255, 251, 251, 0.25);
     }
   }
 
   .span-2 {
-    color: rgba(9, 139, 133, 0.7);
+    color: #a7a7a7a0;
     opacity: 0;
     animation-name: EOanime;
     animation-fill-mode: forwards;
@@ -644,6 +649,10 @@ body {
   max-width: 939px;
   height: auto;
   border-radius: 30px;
+}
+
+#toppic {
+  padding: 0px 0px 10px 0px;
 }
 
 .flipX {
@@ -899,7 +908,7 @@ width:100%;
 }
 
 html::-webkit-scrollbar {
-  width: 15px;
+  width: 6px;
 }
 
 html::-webkit-scrollbar-track {
@@ -912,7 +921,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .ornament {
-  animation: appear .6s 2.5s forwards;
+  animation: appear .6s 0.2s forwards;
   opacity: 0;
 }
 
@@ -932,7 +941,7 @@ html::-webkit-scrollbar-thumb {
 /*　Y軸（横へ） */
 .rotateY{
   animation-name:rotateYAnime;
-  animation-duration:1s;
+  animation-duration:1.3s;
   animation-fill-mode:forwards;
 }
 
@@ -945,4 +954,49 @@ html::-webkit-scrollbar-thumb {
     transform: rotateY(-360deg);
     opacity: 1;
     }
+}
+
+#area-1 {
+  background-color: rgba(240, 239, 239, 0.6);
+}
+
+#title {
+  margin-left: 100px;
+}
+
+#body-img{
+  position: fixed;/*背景を固定するためfixedをかける*/
+	z-index: 0;/*#container,#footerよりも下に配置するために数値を小さくする*/
+  top: 0;/*topの位置がJSで変化*/
+	/*以下画面で背景画像を表示させるための指定*/
+  width: 100%;
+	height:100vh;
+	background: url("dawnlong.jpg") no-repeat top center;/*背景画像の設定※オリジナルの画像に設定してください*/
+	background-size:cover;
+	transform-origin:center;/*変化する基点を中心からに設定*/
+}
+
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  12% {
+    transform: translateY(18px);
+  }
+  24% {
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  12% {
+    transform: translateY(18px);
+  }
+  24% {
+    transform: translate(0);
+  }
 }

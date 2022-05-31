@@ -12,8 +12,7 @@ html {
   
   body {
     font-family: "Avenir Next";
-    background-color: #bfd1c9;
-    background-image: url(sunset.jpg);
+    background-image: url(dawnlong.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -750,16 +749,42 @@ html {
 }
 
 .main::-webkit-scrollbar {
-  width: 15px;
+  width: 6px;
 }
 
 .main::-webkit-scrollbar-track {
   background: rgba(111, 255, 255, 0);
-  border-radius: 30px;
+  
   box-shadow:0 0 5px rgba(240, 239, 239, 0.93) inset ;
 }
 
 .main::-webkit-scrollbar-thumb {
-  background: rgba(111, 255, 255, 0.5);
+  background: #65575d;
   border-radius: 30px;
+}
+
+/*========= バー表示のためのCSS ===============*/
+
+.scrollgress{
+	z-index: 3;/*他のposition指定しているエリアより前に出すためz-indexの数字を大きく*/
+	top:70px!important;/* fixedで設置しているheaderの高さよりも下にバーを出す*/
+}
+#header{
+
+z-index: 2;
+top:0;
+width:100%;
+}
+
+html::-webkit-scrollbar {
+  width: 6px;
+}
+
+html::-webkit-scrollbar-track {
+  background: white;
+  box-shadow:0 0 5px rgba(240, 239, 239, 0.93) inset ;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #65575d;
 }
