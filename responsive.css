@@ -85,7 +85,7 @@
     }
 
     .main {
-        padding: 100px 0px;
+        padding: 30px 0px;
     }
 
     .copy-container {
@@ -96,7 +96,7 @@
     .contents-wrapper {
         border-radius: 0;    
         height: 100%;
-        margin-top: 100px;
+        margin-top: 0px;
     }
 
     .title {
