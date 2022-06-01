@@ -344,7 +344,7 @@ body {
    animation: 
       zoomInAnime 1s 1.7s forwards,
       down 2.7s infinite 2.8s running;
-   width: 10%;
+   width: 30%;
    margin: auto;
   }
   
