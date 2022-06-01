@@ -30,7 +30,8 @@ body {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background: rgb(13, 197, 193);
+    /*rgb(13, 197, 193)*/
+    background: black;
     z-index: 999;
     box-sizing: border-box;
   }
@@ -105,7 +106,8 @@ body {
   }
   
   .header {  
-    background-color: #65575d;
+    /*d67539 65575d 312c2e*/
+    background-color: rgb(226, 224, 224);
     color: #fff;
     height: 75px;
     position: fixed;
@@ -140,7 +142,7 @@ body {
     line-height: 75px;
     opacity: none;
     text-decoration: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
     transition: all 0.6s;  
 }
   
@@ -154,7 +156,7 @@ body {
     line-height: 75px;
     padding: 0px 30px 0px 30px;
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     bottom: none;
     text-decoration: none;
     transition: all 0.3s;
@@ -178,12 +180,12 @@ body {
   }
   
   .children {
-    background-color: #65575d;
+    background-color: rgb(226, 224, 224);
     opacity: 1;
     width: 367px;
     height: 70px;
     text-decoration: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
   }
 
   #mother:hover > ul {
@@ -192,7 +194,7 @@ body {
   }
 
   .header-list ul ul li a:hover {
-    background-color: rgba(10, 200, 200, 0.7);
+    background-color: rgba(0, 255, 255, 0.3);
   }
 
 
@@ -218,7 +220,7 @@ body {
   /* arrow */
   .dli-chevron-down {
     display: inline-block;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     line-height: 1;
     width: 0.6em;
     height: 0.6em;
@@ -312,7 +314,7 @@ body {
     height:3em;
     cursor:pointer;
     /*border:3px solid #bcbbbb;*/
-    border:3px solid #76686e;
+    border:3px solid rgba(245, 245, 245, 0.816);
     vertical-align:middle;
     margin-bottom:4px;
     transition: border-color 0.5s;
@@ -323,8 +325,8 @@ body {
     position:absolute;
     width:1.2em;
     height:1.2em;
-    border-left:3px solid #76686e;
-    border-bottom:3px solid #76686e;
+    border-left:3px solid rgba(245, 245, 245, 0.816);
+    border-bottom:3px solid rgba(245, 245, 245, 0.816);
     transition: border-color 0.5s;
     transition: transform .6s ease;
   }
@@ -338,9 +340,12 @@ body {
    display: flex;
    justify-content: center;
    opacity: 0;
+   margin-top: -0px;
    animation: 
       zoomInAnime 1s 1.7s forwards,
       down 2.7s infinite 2.8s running;
+   width: 10%;
+   margin: auto;
   }
   
   
@@ -382,7 +387,7 @@ body {
     background-color: rgba(240, 239, 239, 1);
     width: 80.5%;
     flex: 1;
-    height: 2060px;
+    height: 2100px;
     min-height: 100%;
     margin: 0 auto;
     margin-top: 60px;
@@ -447,8 +452,8 @@ body {
   }
 
   .footer {
-    background-color: #4d3e45;
-    color: #fff;
+    background-color: black;
+    color: white;
     height: 120px;
     width: 100%;
     position: absolute;/*←絶対位置*/
@@ -522,7 +527,7 @@ body {
 
     100% {
       color: rgba(37, 36, 35, 1);
-      background-color: rgba(255, 251, 251, 0.23);
+      background-color: rgba(255, 251, 251, 0);
     }
   }
 
@@ -550,7 +555,7 @@ body {
 
     100% {
       color: rgba(37, 36, 35, 1);
-      background-color: rgba(255, 251, 251, 0.25);
+      background-color: rgba(255, 251, 251, 0);
     }
   }
 
@@ -673,7 +678,7 @@ body {
   /*ボタンの形状*/
   text-decoration: none;
   display: inline-block;
-  border: 3px solid #65575d;/* ボーダーの色と太さ */
+  border: 3px solid black;/* ボーダーの色と太さ */
   padding: 15px 39px;
   text-align: center;
   outline: none;
@@ -706,7 +711,7 @@ body {
   left: 0;
   z-index: 2;
   /*色や形状*/
-  background: #65575d;/*背景色*/
+  background: black;/*背景色*/
   width: 100%;
   height: 100%;
   /*アニメーション*/
@@ -752,8 +757,8 @@ body {
     transform: rotateX(90deg);/*縦軸に回転*/
     transform-origin: 0% 50%;/*回転する基点*/
     opacity: 0;
-    background: #65575d;/*背景色*/
-    color: #fff;/*テキストの色を変えたい場合はここを修正*/
+    background: rgb(192, 182, 182);/*背景色*/
+    color: black;/*テキストの色を変えたい場合はここを修正*/
     /*ここからテキスト中央寄せの指定*/
     display: flex;
     justify-content: center;
@@ -961,7 +966,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 #title {
-  margin-left: 100px;
+  margin-left: 140px;
+  margin-top: -25px;
 }
 
 #body-img{
@@ -971,7 +977,7 @@ html::-webkit-scrollbar-thumb {
 	/*以下画面で背景画像を表示させるための指定*/
   width: 100%;
 	height:100vh;
-	background: url("dawnlong.jpg") no-repeat top center;/*背景画像の設定※オリジナルの画像に設定してください*/
+	background: url("crossroad.jpg") no-repeat top center;/*背景画像の設定※オリジナルの画像に設定してください*/
 	background-size:cover;
 	transform-origin:center;/*変化する基点を中心からに設定*/
 }

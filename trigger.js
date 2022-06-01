@@ -9,8 +9,6 @@ function fadeAnime(){
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight){
     $(this).addClass('rotateY');// 画面内に入ったらrotateYというクラス名を追記
-    }else{
-    $(this).removeClass('rotateY');// 画面外に出たらrotateYというクラス名を外す
     }
     });
 

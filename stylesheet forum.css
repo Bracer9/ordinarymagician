@@ -13,7 +13,7 @@ html {
 body {
   font-family: "Avenir Next";
   background-color: #bfd1c9;
-  background-image: url(dawnlong.jpg);
+  background-image: url(crossroad.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -110,7 +110,8 @@ body {
   }
   
   .header {  
-    background-color: #65575d;
+    /*d67539 65575d 312c2e*/
+    background-color: rgb(226, 224, 224);
     color: #fff;
     height: 75px;
     position: fixed;
@@ -131,7 +132,7 @@ body {
     line-height: 75px;
     opacity: none;
     text-decoration: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
     transition: all 0.6s;  
 }
   
@@ -145,7 +146,7 @@ body {
     line-height: 75px;
     padding: 0px 30px 0px 30px;
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     bottom: none;
     text-decoration: none;
     transition: all 0.3s;
@@ -169,12 +170,12 @@ body {
   }
   
   .children {
-    background-color: #65575d;
+    background-color: rgb(226, 224, 224);
     opacity: 1;
     width: 367px;
     height: 70px;
     text-decoration: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
   }
 
   #mother:hover > ul {
@@ -183,7 +184,7 @@ body {
   }
 
   .header-list ul ul li a:hover {
-    background-color: rgb(10, 200, 200);
+    background-color: rgba(0, 255, 255, 0.8);
   }
 
 
@@ -209,7 +210,7 @@ body {
   /* arrow */
   .dli-chevron-down {
     display: inline-block;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     line-height: 1;
     width: 0.6em;
     height: 0.6em;
@@ -225,56 +226,56 @@ body {
   
 
   .footer {
-      background-color: #4d3e45;
-      color: #fff;
-      height: 120px;
-      width: 100%;
-      position: absolute;/*←絶対位置*/
-      bottom: 0%; /*下に固定*/
-      left: 0px;
-      cursor: url(leek-32.png), default;
-    }
-    
-    
-    .btn-footer {
-      display: inline-block;
-      color: white;
-      text-align: right;
-      padding-bottom: 10px;
-    }
-    
-    .footer-logo {
-      float: left;
-      color: #fff;
-      font-size: 30px;
-      padding-top: 39px;
-      padding-left: 30px;
-      opacity: 0.7;
-    }
-    
-    .footer-logo:hover {
-    opacity: 1;
-    }
-    
-    .footer-logo {
-    transition: all 0.5s;
-    }
-    
-    .footer-list {
-      float: right;
-    }
-    
-    .footer-list a {
-      margin-top: 50px;
-      margin-right: 50px;
-      font-size: 18px;
-      opacity: 0.7;
-    }
-    
-    .footer-list ul {
-      margin: 0px;
-      padding: 0px;
-    }
+    background-color: black;
+    color: white;
+    height: 120px;
+    width: 100%;
+    position: absolute;/*←絶対位置*/
+    bottom: 0%; /*下に固定*/
+    left: 0px;
+    cursor: url(leek-32.png), default;
+  }
+  
+  
+  .btn-footer {
+    display: inline-block;
+    color: white;
+    text-align: right;
+    padding-bottom: 10px;
+  }
+
+  .footer-logo {
+    float: left;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 39px;
+    padding-left: 30px;
+    opacity: 0.7;
+  }
+  
+  .footer-logo:hover {
+  opacity: 1;
+}
+
+  .footer-logo {
+  transition: all 0.5s;
+}
+
+  .footer-list {
+    float: right;
+  }
+  
+  .footer-list a {
+    margin-top: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+    opacity: 0.7;
+  }
+  
+  .footer-list ul {
+    margin: 0px;
+    padding: 0px;
+  }
 
 
   .ERO {
