@@ -82,6 +82,7 @@
 
     .contents-wrapper {
         width: 100%;
+        animation: none;
     }
 
     .main {
