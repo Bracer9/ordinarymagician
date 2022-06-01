@@ -82,11 +82,14 @@
 
     .contents-wrapper {
         width: 100%;
-        animation: none;
     }
 
     .main {
         padding: 30px 0px;
+    }
+
+    #toptext {
+        display: none;
     }
 
     .copy-container {
