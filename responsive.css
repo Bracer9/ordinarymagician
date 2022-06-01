@@ -92,12 +92,14 @@
         padding: 0px 80px;
         height: 399px;
         margin-bottom: 150px;
+        padding-top: 120px;
     }
 
     .contents-wrapper {
         border-radius: 0;    
         height: 100%;
         margin-top: 0px;
+        
     }
 
     .title {
@@ -138,7 +140,7 @@
     }
 
     .dli-chevron-up {
-        margin-bottom: 60px;
+        margin-bottom: 140px;
     }
 
     .twitter {
@@ -173,6 +175,10 @@
 
     .span-R {
         color: rgb(49, 142, 102);
+    }
+
+    #maintext {
+        padding: 0px 15px;
     }
   }
 
