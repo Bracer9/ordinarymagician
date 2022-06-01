@@ -387,7 +387,7 @@ body {
     background-color: rgba(240, 239, 239, 1);
     width: 80.5%;
     flex: 1;
-    height: 2100px;
+    height: 2840px; /* 740px */
     min-height: 100%;
     margin: 0 auto;
     margin-top: 60px;
@@ -1006,3 +1006,4 @@ html::-webkit-scrollbar-thumb {
     transform: translate(0);
   }
 }
+
