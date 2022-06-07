@@ -12,7 +12,6 @@ html {
 
 body {
   font-family: "Avenir Next";
-  
   padding: 0;
   margin: 0;
   min-height: 100vh;
@@ -22,84 +21,6 @@ body {
   position: relative;
   }   
 
-  #loader-wrap {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    /*rgb(13, 197, 193)*/
-    background: black;
-    z-index: 999;
-    box-sizing: border-box;
-  }
-
-.loader,
-.loader:before,
-.loader:after {
-  background: #ffffff;
-  -webkit-animation: load1 1s infinite ease-in-out;
-  animation: load1 1s infinite ease-in-out;
-  width: 1em;
-  height: 4em;
-}
-.loader {
-  color: #ffffff;
-  text-indent: -9999em;
-  margin: 88px auto;
-  position: relative;
-  font-size: 11px;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation-delay: -0.16s;
-  animation-delay: -0.16s;
-}
-.loader:before,
-.loader:after {
-  position: absolute;
-  top: 0;
-  content: '';
-}
-.loader:before {
-  left: -1.5em;
-  -webkit-animation-delay: -0.32s;
-  animation-delay: -0.32s;
-}
-.loader:after {
-  left: 1.5em;
-}
-@-webkit-keyframes load1 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0;
-    height: 4em;
-  }
-  40% {
-    box-shadow: 0 -2em;
-    height: 5em;
-  }
-}
-@keyframes load1 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0;
-    height: 4em;
-  }
-  40% {
-    box-shadow: 0 -2em;
-    height: 5em;
-  }
-}
-
-.loaded {
-  opacity: 0;
-  visibility: hidden;
-}
 
   li {
     list-style: none;
@@ -117,8 +38,8 @@ body {
     opacity: 0;
     animation-name: headeranime;
     animation-fill-mode: forwards;
-    animation-delay: 0.7s;
-    animation-duration: 0.9s;
+    animation-delay: 1.7s;
+    animation-duration: 1.1s;
     cursor: url(leek-32.png), default; 
   }
   
@@ -240,7 +161,7 @@ body {
   }
   
   .copy-container {
-    height: 495px;
+    height: 250px;
     padding-bottom: 50px;
     
   }
@@ -250,61 +171,7 @@ body {
     padding-top: 0px;
   }
   
-  .copy-container h2 {
-    font-size: 45px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 0px;
-    background-color:rgb(255, 255, 255);
-    opacity: 0;
-    border-radius: 30px;
-    text-align: right;
-    padding-right: 25px;
-    cursor: text;
-    animation-name: searchanime;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
-    animation-delay: 0.9s;
-    margin-left: 100px;
-    margin-right: 100px;
-    visibility: hidden;
-  }
   
-  
-  @keyframes searchanime {
-    0% {
-      opacity: 0;
-      transform: translateY(300px);
-    }
-
-    100% {
-      opacity: 0.5;
-      transform: translateY(0px);
-    }
-    
-  }
-
-  .search {
-    outline: none;
-    position: absolute;
-    top: 580px;
-    height: 66px;
-    width: 86.5%;
-    background-color: rgba(111, 43, 43, 0);
-    font-size: 60px;
-    border-radius: 30px;
-    border: none;
-    float: right;
-    outline:rgb(37, 36, 35);
-    outline: rgba(37, 36, 35, 0);
-    margin-left: 100px;
-    margin-right: 100px;
-    visibility: hidden;
-  }
-
-  .search:focus {
-    background-color: rgba(255, 251, 251, 0.3);
-  }
 
   .arrow {
     display:inline-block;
@@ -316,7 +183,7 @@ body {
     /*border:3px solid #bcbbbb;*/
     border:3px solid rgba(245, 245, 245, 0.816);
     vertical-align:middle;
-    margin-bottom:4px;
+    margin-top: 200px;
     transition: border-color 0.5s;
     transition: transform .6s ease;
   }
@@ -343,7 +210,7 @@ body {
    margin-top: -0px;
    animation: 
       zoomInAnime 1s 1.7s forwards,
-      down 2.7s infinite 2.8s running;
+      down 2.2s infinite 2.5s running;
    width: 30%;
    margin: auto;
   }
@@ -504,109 +371,6 @@ body {
   }
 
 
-  .ERO {
-    margin-top: 35px;
-    width: 230px;
-    height: 130px;
-    line-height: 140px;
-    color: rgba(37, 36, 35, 0);
-    animation-name: EROanime;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-delay: 2.5s;
-    background-color: rgba(255, 251, 251, 0);
-    -webkit-appearance: none;
-    border-radius: 30px;
-  }
-
-  @keyframes EROanime {
-    0% {
-      color: rgba(37, 36, 35, 0);
-      background-color: rgba(255, 251, 251, 0);
-    }
-
-    100% {
-      color: rgba(37, 36, 35, 1);
-      background-color: rgba(255, 251, 251, 0);
-    }
-  }
-
-  .HELLO {
-    color:rgba(37, 36, 35, 0);
-    padding: 0px;
-    line-height: 145px;
-    margin-top: 125px;
-    height: 135px;
-    width: 350px;
-    animation-name: HELLOanime;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
-    background-color: rgba(255, 251, 251, 0);
-    -webkit-appearance: none;
-    border-radius: 30px;
-  }
-
-  @keyframes HELLOanime {
-    0% {
-      color: rgba(37, 36, 35, 0);
-      background-color: rgba(255, 251, 251, 0);
-    }
-
-    100% {
-      color: rgba(37, 36, 35, 1);
-      background-color: rgba(255, 251, 251, 0);
-    }
-  }
-
-  .span-2 {
-    color: #a7a7a7a0;
-    opacity: 0;
-    animation-name: EOanime;
-    animation-fill-mode: forwards;
-    animation-delay: 1.1s;
-    animation-duration: 2s;
-    display: inline-block;
-  }
-
-  @keyframes EOanime {
-    0% {
-      opacity: 0;
-      transform: translateY(-100px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-  }
-
-  .span-R {
-    color:rgba(211, 81, 81, 0.904);
-    opacity: 0;
-    animation-name: Ranime;
-    animation-fill-mode: forwards;
-    animation-delay: 1.1s;
-    animation-duration: 3s;
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @keyframes Ranime {
-    0% {
-      opacity: 0;
-      transform: translateY(100px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-  }
-
-
-  
-
   h1 {
     width: 100%;
     margin-bottom: 0px;
@@ -622,31 +386,6 @@ body {
     padding-right: 8px;
   }
 
-  
-#loader-wrap {
-    -moz-animation: cssAnimation 0.5s ease-in 0.5s forwards;
-    /* Firefox */
-    -webkit-animation: cssAnimation 0.5s ease-in 0.5s forwards;
-    /* Safari and Chrome */
-    -o-animation: cssAnimation 0.5s ease-in 0.5s forwards;
-    /* Opera */
-    animation: cssAnimation 0.5s ease-in 0.5s forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-@keyframes cssAnimation {
-    to {
-        opacity: 0;
-        overflow:hidden;
-        z-index: 0;
-    }
-}
-@-webkit-keyframes cssAnimation {
-    to {
-        opacity: 0;
-        visibility:hidden;
-    }
-}
 
 
 .toppicture {
@@ -830,31 +569,31 @@ body {
 
 
 .ornament h2{
-	position:relative;
-	display:inline-block;
-	padding:24px 64px;
+    position:relative;
+    display:inline-block;
+    padding:24px 64px;
 }
 .ornament h2:before, .ornament h2:after{
-	content:"";
-	display:block;
-	width:60%;
-	height:4px;
-	border-top:1px solid #111;
-	position:absolute;
-	top:0;
+    content:"";
+    display:block;
+    width:60%;
+    height:4px;
+    border-top:1px solid #111;
+    position:absolute;
+    top:0;
 }
 .ornament h2:before{left: -120px;}
 .ornament h2:after{right:-120px;}
 .ornament h2 span{
-	display:block;
-	width:4px;height:4px;
-	border:2px solid #111;
-	-webkit-transform:rotate(45deg);
-	transform:rotate(45deg);
-	position:absolute;
-	top:-4px;
-	left:50%;
-	margin-left:-4px;
+    display:block;
+    width:4px;height:4px;
+    border:2px solid #111;
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+    position:absolute;
+    top:-4px;
+    left:50%;
+    margin-left:-4px;
 }
 .dli-chevron-up {
   display: inline-block;
@@ -902,8 +641,8 @@ body {
 /*========= バー表示のためのCSS ===============*/
 
 .scrollgress{
-	z-index: 3;/*他のposition指定しているエリアより前に出すためz-indexの数字を大きく*/
-	top:70px!important;/* fixedで設置しているheaderの高さよりも下にバーを出す*/
+    z-index: 3;/*他のposition指定しているエリアより前に出すためz-indexの数字を大きく*/
+    top:70px!important;/* fixedで設置しているheaderの高さよりも下にバーを出す*/
 }
 #header{
 
@@ -922,25 +661,10 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #65575d;
+  background: #000000;
 }
 
-.ornament {
-  animation: appear .6s 0.2s forwards;
-  opacity: 0;
-}
 
-@keyframes appear {
-  0% {
-    margin-left: -300px;
-    opacity: 0;
-  }
-  100% {
-    margin-top: 0px;
-    opacity: 0.9;
-    
-  }
-}
 
 
 /*　Y軸（横へ） */
@@ -968,18 +692,33 @@ html::-webkit-scrollbar-thumb {
 #title {
   margin-left: 140px;
   margin-top: -25px;
+  visibility: hidden;
 }
 
 #body-img{
   position: fixed;/*背景を固定するためfixedをかける*/
-	z-index: 0;/*#container,#footerよりも下に配置するために数値を小さくする*/
+    z-index: 0;/*#container,#footerよりも下に配置するために数値を小さくする*/
   top: 0;/*topの位置がJSで変化*/
-	/*以下画面で背景画像を表示させるための指定*/
+    /*以下画面で背景画像を表示させるための指定*/
   width: 100%;
-	height:100vh;
-	background: url("crossroad.jpg") no-repeat top center;/*背景画像の設定※オリジナルの画像に設定してください*/
-	background-size:cover;
-	transform-origin:center;/*変化する基点を中心からに設定*/
+    height:100vh;
+    background: url("crossroad.jpg") no-repeat top center;/*背景画像の設定※オリジナルの画像に設定してください*/
+    background-size:cover;
+    transform-origin:center;/*変化する基点を中心からに設定*/
+  animation: crossroadanime 2.2s 0.9s forwards;
+  opacity: 0;
+}
+
+@keyframes crossroadanime {
+  0% {
+    filter: blur(15px);
+    opacity: 0;
+  }
+
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 
@@ -987,10 +726,10 @@ html::-webkit-scrollbar-thumb {
   0% {
     transform: translate(0);
   }
-  12% {
-    transform: translateY(18px);
+  16% {
+    transform: translateY(24px);
   }
-  24% {
+  32% {
     transform: translate(0);
   }
 }
@@ -999,11 +738,278 @@ html::-webkit-scrollbar-thumb {
   0% {
     transform: translate(0);
   }
-  12% {
-    transform: translateY(18px);
+  16% {
+    transform: translateY(24px);
   }
-  24% {
+  32% {
     transform: translate(0);
   }
 }
 
+/*== 押し込む円 */
+
+.pushcircle{
+  /*周囲の線の起点とするためrelativeを指定*/
+position: relative;
+  /*円の形状*/
+width:90px;
+height:90px;
+  box-sizing: border-box;
+  padding: 0 15px;
+text-align: center;
+background-color: rgb(58, 58, 58);
+border-radius:50%;
+color: #fff;
+  text-decoration: none;
+  outline: none;
+  /*天地中央にテキストを配置*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-top: 540px;
+  font-size: 1em;
+  position: fixed;
+  z-index: 100;
+  animation: pushcircleanime 1s 1.9s forwards;
+  opacity: 0;
+}
+
+@keyframes pushcircleanime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} 
+
+/*内側の線*/
+.pushcircle:after {
+content: "";
+  /*絶対配置で線の位置を決める*/
+position: absolute;
+top: 50%;
+left: 50%;
+  /*線の形状*/
+  width: 85%;
+height: 85%;
+border: 3px solid #333;
+border-radius: 50%;
+transform: translate(-50%, -50%) scale(1.1);
+  /*アニメーションの指定*/
+  transition: .3s ease; 
+}
+
+/*hoverをしたら枠線が小さくなる*/
+.pushcircle:hover:after {
+transform: translate(-50%, -50%) scale(1);
+  border-color:#fff;
+}
+
+#history {
+  float: right;
+  width: 100px;
+  margin-right: 15px;
+  z-index: 999;
+  margin-top: -355px;
+}
+
+/*全共通*/
+
+.bgextend{
+    position: relative;
+    overflow: hidden;/*　はみ出た色要素を隠す　*/
+}
+
+/*中の要素*/
+.bgappear{
+    animation-name:bgextendAnimeSecond;
+    animation-duration:1s;
+    animation-delay: 0.6s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes bgextendAnimeSecond{
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+}
+}
+
+/*左から右*/
+.bgLRextend::before{
+    animation-name:bgLRextendAnime;
+    animation-duration:1.9s;
+    animation-fill-mode:forwards;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;/*伸びる背景色の設定*/
+}
+@keyframes bgLRextendAnime{
+    0% {
+        transform-origin:left;
+        transform:scaleX(0);
+    }
+    50% {
+        transform-origin:left;
+        transform:scaleX(1);
+    }
+    50.001% {
+        transform-origin:right;
+    }
+    100% {
+        transform-origin:right;
+        transform:scaleX(0);
+    }
+}
+
+#extend {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 3.9em;
+}
+
+/*==================================================
+じわっ
+===================================*/
+
+/* ぼかしから出現 */
+.blur{
+  animation-name:blurAnime;
+  animation-duration:1.3s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes blurAnime{
+  from {
+  filter: blur(10px);
+  transform: scale(1.02);
+  opacity: 0;
+  }
+
+  to {
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+  }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+ 
+.blurTrigger{
+    opacity: 0;
+}
+
+body {
+  background-color: black;
+}
+
+#loader-wrap {
+  position: fixed;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+background: #ffffff;
+-webkit-animation: load1 1s infinite ease-in-out;
+animation: load1 1s infinite ease-in-out;
+width: 1em;
+height: 4em;
+}
+.loader {
+color: #ffffff;
+text-indent: -9999em;
+margin: 88px auto;
+position: relative;
+font-size: 11px;
+-webkit-transform: translateZ(0);
+-ms-transform: translateZ(0);
+transform: translateZ(0);
+-webkit-animation-delay: -0.16s;
+animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+position: absolute;
+top: 0;
+content: '';
+}
+.loader:before {
+left: -1.5em;
+-webkit-animation-delay: -0.32s;
+animation-delay: -0.32s;
+}
+.loader:after {
+left: 1.5em;
+}
+@-webkit-keyframes load1 {
+0%,
+80%,
+100% {
+  box-shadow: 0 0;
+  height: 4em;
+}
+40% {
+  box-shadow: 0 -2em;
+  height: 5em;
+}
+}
+@keyframes load1 {
+0%,
+80%,
+100% {
+  box-shadow: 0 0;
+  height: 4em;
+}
+40% {
+  box-shadow: 0 -2em;
+  height: 5em;
+}
+}
+
+.loaded {
+opacity: 0;
+visibility: hidden;
+}
+
+#loader-wrap {
+  -moz-animation: cssAnimation 0.5s ease-in 0.5s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0.5s ease-in 0.5s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0.5s ease-in 0.5s forwards;
+  /* Opera */
+  animation: cssAnimation 0.5s ease-in 0.5s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+  to {
+      opacity: 0;
+      overflow:hidden;
+      z-index: 0;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+      opacity: 0;
+      visibility:hidden;
+  }
+}

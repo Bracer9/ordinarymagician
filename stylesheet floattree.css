@@ -1,0 +1,225 @@
+html {
+    min-height: 100%;
+    position: relative;
+    min-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    -webkit-appearance: none;
+  }
+  
+  
+  body {
+    font-family: "Avenir Next";
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    cursor: url(leek-32.png), default;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    }   
+
+    li {
+        list-style: none;
+      }
+      
+      .header {  
+        /*d67539 65575d 312c2e*/
+        background-color: rgb(226, 224, 224);
+        color: #fff;
+        height: 75px;
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 10;
+        opacity: 0;
+        animation-name: headeranime;
+        animation-fill-mode: forwards;
+        animation-delay: 0.7s;
+        animation-duration: 0.9s;
+        cursor: url(leek-32.png), default; 
+      }
+      
+    @keyframes headeranime {
+      0% {
+        margin-top: -100px;
+        opacity: 0;
+      }
+      100% {
+        margin-top: 0px;
+        opacity: 0.9;
+        
+      }
+    }
+    
+      .header-logo {
+        float: left;
+        font-size: 32px;
+        padding-left: 20px;
+        margin-right: 25px;
+        line-height: 75px;
+        opacity: none;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        transition: all 0.6s;  
+    }
+      
+      .header-logo:hover {
+        color: rgba(111, 255, 255, 0.896);
+      }
+    
+      .header-list a {
+        float: left;
+        height: 75px;
+        line-height: 75px;
+        padding: 0px 30px 0px 30px;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        bottom: none;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+    
+      .header-list ul {
+        height: 0px;
+        margin: 0px;
+      } 
+      
+      .header-list ul ul {
+        display: block;
+        float: none;
+        position: absolute;
+        top: 75px;
+        left: 108px;
+        background-color: #65575d;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+      }
+      
+      .children {
+        background-color: rgb(226, 224, 224);
+        opacity: 1;
+        width: 367px;
+        height: 70px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+    
+      #mother:hover > ul {
+        visibility: visible;
+        opacity: 1;
+      }
+    
+      .header-list ul ul li a:hover {
+        background-color: rgba(0, 255, 255, 0.3);
+      }
+    
+    
+      .has-child {
+        position: relative;
+        
+      }
+    
+      .header-list a:hover {
+        background-color: rgba(0, 255, 255, 0.3);
+      }
+    
+      .twitter {
+        position: absolute;
+        right: 0px;
+      }
+    
+      .soundcloud {
+        position:absolute;
+        right: 80px;
+      }
+
+      .footer {
+        background-color: black;
+        color: white;
+        height: 120px;
+        width: 100%;
+        position: absolute;/*←絶対位置*/
+        bottom: 0%; /*下に固定*/
+        left: 0px;
+        cursor: url(leek-32.png), default;
+      }
+      
+      
+      .btn-footer {
+        display: inline-block;
+        color: white;
+        text-align: right;
+        padding-bottom: 10px;
+      }
+    
+      .footer-logo {
+        float: left;
+        color: #fff;
+        font-size: 30px;
+        padding-top: 39px;
+        padding-left: 30px;
+        opacity: 0.7;
+      }
+      
+      .footer-logo:hover {
+      opacity: 1;
+    }
+    
+      .footer-logo {
+      transition: all 0.5s;
+    }
+    
+      .footer-list {
+        float: right;
+      }
+      
+      .footer-list a {
+        margin-top: 50px;
+        margin-right: 50px;
+        font-size: 18px;
+        opacity: 0.7;
+      }
+      
+      .footer-list ul {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      /*========= バー表示のためのCSS ===============*/
+
+.scrollgress{
+	z-index: 3;/*他のposition指定しているエリアより前に出すためz-indexの数字を大きく*/
+	top:70px!important;/* fixedで設置しているheaderの高さよりも下にバーを出す*/
+}
+#header{
+
+z-index: 2;
+top:0;
+width:100%;
+}
+
+html::-webkit-scrollbar {
+  width: 6px;
+}
+
+html::-webkit-scrollbar-track {
+  background: white;
+  box-shadow:0 0 5px rgba(240, 239, 239, 0.93) inset ;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #65575d;
+}
+
+#bodyimg{
+    position: fixed;/*背景を固定するためfixedをかける*/
+    z-index: 0;/*#container,#footerよりも下に配置するために数値を小さくする*/
+    top: 0;/*topの位置がJSで変化*/
+      /*以下画面で背景画像を表示させるための指定*/
+    width: 100%;
+    height:100vh;
+    background: url("crossroad.jpg") no-repeat top center;/*背景画像の設定※オリジナルの画像に設定してください*/
+    background-size:cover;
+  }

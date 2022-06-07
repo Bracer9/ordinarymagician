@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>test</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="stylesheet test.css">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+
+<body>
+
+  <div id="splash">
+    <div id="splash-logo">大事なのは遊び心だよ</div>
+    <!--/splash--></div>
+    <div class="splashbg">
+  </div><!---画面遷移用-->
+<div id="container">
+<div id="wrpeer">
+    <div id="body-img"></div>
+    
+    <div id="header" class="header">
+      <a href="index.html" class="header-logo">Proero</a>
+      <div class="header-list">
+        <ul>
+          <li id="mother"><a href=#><span class="dli-chevron-down"></span>目次</a>
+            <ul>
+              <li><a href="#area-1" class="children">エロゲーの軌跡（更新中）</a></li>
+              <li><a href="#" class="children">音声作品/MMD(建設中)</a></li>
+            </ul>
+          </li>
+          
+      </a>
+        </ul>
+      </div>
+    </div>
+</header>
+
+<div id="wrapper">
+  <canvas id="particle" ></canvas>
+  <canvas id="waveCanvas"></canvas>
+  <!--/wrapper-->
+
+</div>
+<div class="scrolldown2"><span>Scroll</span></div>
+
+<div id="luxy">
+
+  <section class="area" id="area-1">
+  <figure class="luxy-el blurTrigger" id="image1" data-speed-y="8" data-offset="50"><div class="image"><img src="rance01.jpg" alt=""></div></figure>
+  <div class="box luxy-el rotateYTrigger" id="box1" data-speed-y="-18">
+  <h3><p class="date rotateYTrigger">July 15, 1989</p></h3>
+  <h2>『Rance -光をもとめて-』</h2>
+    <p class="description"><s>人類史上初のエロゲー！！！！…</s><br>「ちゃんと遊べるエロゲー」という新たなジャンルを確立した神ゲー<br>メーカー：Alicesoft</p>
+      <a href="#" class="btn bgleft blurTrigger"><span>FULL STORY</span></a>
+  </div>
+  </section>
+
+  <section class="area">
+  <figure class="luxy-el blurTrigger" id="image2" data-horizontal="-100" data-speed-x="-2" data-offset="50"><div class="image2 image"><img src="baldr1.jpg" alt=""></div></figure>
+  <div class="box luxy-el rotateYTrigger" data-speed-y="-10" data-speed-x="5" data-offset="150">
+  <h3><p class="date rotateYTrigger">July 2, 1999</p></h3>
+  <h2>『BALDRHEAD〜武装金融外伝〜』</h2>
+    <p class="description">エロとロボットバトル要素を見事に融合させたBALDRシリーズの第一作目<br>メーカー：戯画</p>
+    <a href="#" class="btn bgleft blurTrigger" id="btn2"><span>FULL STORY</span></a>
+  </div>
+  </section>
+  
+  
+  <section class="area" id="area3">
+  <figure class="luxy-el blurTrigger" id="image3" data-offset="-0" data-speed-x="2"><div class="image image3"><img src="era.png" alt=""></div></figure>
+  <div class="box luxy-el rotateYTrigger box3" id="box3" data-offset="220" data-speed-y="-10">
+  <h3><p class="date rotateYTrigger">Dec 12, 2005</p></h3>
+  <h2>『eraシリーズ』</h2>
+    <p class="description">無限大の可能性を秘めた高自由度/中毒性の調教SLG<br>ツール開発者/作成者：獏さん/ネット上の有志の者</p>
+    <a href="#" class="btn bgleft blurTrigger" id="btn3"><span>FULL STORY</span></a>
+  </div>
+
+  <section class="area" id="area4">
+  <div class="box luxy-el rotateYTrigger box4" id="box4" data-offset="400" data-speed-y="-8">
+    <h2>To Be Continued</h2>
+    <p class="description">エロの歴史はまだまだ続く<br>MMD、ボイスドラマ（音声作品）、同人ゲーム... and more</p>
+    <a href="#" class="pushcircle">Top</a>
+  </div>
+  
+  </section>
+  </section>
+  
+</div><!--/luxy-->    
+</div>
+
+    <div id="footer" class="footer">
+      <a href=#><div class="footer-logo">Proero</div></a>
+      <div class="footer-list">
+        <ul>
+          <a href=# class="btn-footer">管理人について</a>
+          <a href=# class="btn-footer">お友達募集</a>
+          <a href=# class="btn-footer">憩いの場</a>
+        </ul>
+      </div>
+</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+<script src="luxy.js"></script>
+<script src="luxyinit.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="particleText.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollgress/2.0.0/scrollgress.min.js"></script>
+<script src="fortest.js"></script>
+<script src="trigger-test.js"></script>
+<script src="link.js"></script>
+</body>
+</html>
