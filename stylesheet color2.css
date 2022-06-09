@@ -254,7 +254,7 @@ body {
     background-color: rgba(240, 239, 239, 1);
     width: 80.5%;
     flex: 1;
-    height: 2860px; /* 740px */
+    height: auto; /* 740px */
     min-height: 100%;
     margin: 0 auto;
     margin-top: 60px;
@@ -613,6 +613,7 @@ body {
   animation-delay: 1.7s;
   animation-fill-mode:forwards;
   margin-top: 50px;
+  margin-bottom: 65px;
   cursor: pointer;
 }
 
